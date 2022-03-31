@@ -7,8 +7,6 @@ Guthub: [yolov5](https://github.com/ultralytics/yolov5)
 
 ## informations:  
 
-<hr/> 
-
 ### First attempt:  
 Dataset: 1000 bird pictures  
 Label: Remarked with makesense.ai + COCO SSD  
