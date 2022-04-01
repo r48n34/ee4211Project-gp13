@@ -5,7 +5,7 @@ import numpy as np
 import PIL
 
 # model location
-model = torch.hub.load('ultralytics/yolov5', 'custom', path="G:\\yolov5Play\\yolov5\\birdPt\\best.pt")
+model = torch.hub.load('ultralytics/yolov5', 'custom', path="E:\\ee4211Project\\training result\\small\\weights\\best.pt")
 
 imgDir = "G:\\Data\\Test"
 imgArr = os.listdir(imgDir)
@@ -49,10 +49,10 @@ print(len(finalArr))
 finalArr = np.array(finalArr)
 df = pd.DataFrame({
     'ImageId': finalArr[:, 0],
-    'X_min': finalArr[:, 1],
-    'Y_min': finalArr[:, 2],
-    'X_max': finalArr[:, 3],
-    'Y_max': finalArr[:, 4]
+    ' X_min': finalArr[:, 1],
+    ' Y_min': finalArr[:, 2],
+    ' X_max': finalArr[:, 3],
+    ' Y_max': finalArr[:, 4]
 })
 
-df.to_csv("outputNew2.csv" , index=False)
+df.to_csv("outputNewSmall.csv" , index=False)

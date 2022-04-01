@@ -5,7 +5,7 @@ import numpy as np
 import PIL
 
 # model location
-model = torch.hub.load('ultralytics/yolov5', 'custom', path="G:\\yolov5Play\\yolov5\\birdPt\\best.pt")
+model = torch.hub.load('ultralytics/yolov5', 'custom', path="E:\\ee4211Project\\training result\\small\\weights\\best.pt")
 
 imgDir = "G:\\Data\\Test"
 imgArr = os.listdir(imgDir)
