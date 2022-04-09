@@ -5,7 +5,7 @@ import numpy as np
 import PIL
 
 # model location
-model = torch.hub.load('ultralytics/yolov5', 'custom', path="E:\\ee4211Project\\training result\\medium\\weights\\best.pt")
+model = torch.hub.load('ultralytics/yolov5', 'custom', path="E:\\ee4211Project\\training models\\m2\\weights\\best.pt")
 
 imgDir = "G:\\Data\\Test"
 imgArr = os.listdir(imgDir)
@@ -57,4 +57,4 @@ df = pd.DataFrame({
     ' Y_max': finalArr[:, 4]
 })
 
-df.to_csv("outputNew2Medium.csv" , index=False)
+df.to_csv("outputNew2Large.csv" , index=False)
